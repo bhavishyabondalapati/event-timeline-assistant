@@ -1,0 +1,1405 @@
+{
+  "_note": "SIMULATED DATA for a learning project. Not from any real plant.",
+  "events": [
+    {
+      "id": "EVT-0001",
+      "timestamp": "2026-01-05T00:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-100: Sampling"
+    },
+    {
+      "id": "EVT-0002",
+      "timestamp": "2026-01-05T00:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-100: Feed start"
+    },
+    {
+      "id": "EVT-0003",
+      "timestamp": "2026-01-05T00:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-100: Harvest"
+    },
+    {
+      "id": "EVT-0004",
+      "timestamp": "2026-01-05T04:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-100: Temperature shift"
+    },
+    {
+      "id": "EVT-0005",
+      "timestamp": "2026-01-05T04:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-100: Inoculation"
+    },
+    {
+      "id": "EVT-0006",
+      "timestamp": "2026-01-05T04:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-100: Sampling"
+    },
+    {
+      "id": "EVT-0007",
+      "timestamp": "2026-01-05T08:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-100: Inoculation"
+    },
+    {
+      "id": "EVT-0008",
+      "timestamp": "2026-01-05T08:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-100: Sampling"
+    },
+    {
+      "id": "EVT-0009",
+      "timestamp": "2026-01-05T08:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-100: Harvest"
+    },
+    {
+      "id": "EVT-0010",
+      "timestamp": "2026-01-05T09:25:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "sensor_pause",
+      "description": "Data stream paused for 12 min"
+    },
+    {
+      "id": "EVT-0011",
+      "timestamp": "2026-01-05T09:30:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "alarm",
+      "description": "Sensor drift detected"
+    },
+    {
+      "id": "EVT-0012",
+      "timestamp": "2026-01-05T09:48:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "work_order",
+      "description": "WO-1013 opened: inspect Sensor-DO-3"
+    },
+    {
+      "id": "EVT-0013",
+      "timestamp": "2026-01-05T12:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-100: Feed start"
+    },
+    {
+      "id": "EVT-0014",
+      "timestamp": "2026-01-05T12:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-100: Inoculation"
+    },
+    {
+      "id": "EVT-0015",
+      "timestamp": "2026-01-05T12:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-100: Harvest"
+    },
+    {
+      "id": "EVT-0016",
+      "timestamp": "2026-01-05T16:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-100: Temperature shift"
+    },
+    {
+      "id": "EVT-0017",
+      "timestamp": "2026-01-05T16:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-100: Inoculation"
+    },
+    {
+      "id": "EVT-0018",
+      "timestamp": "2026-01-05T16:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-100: Inoculation"
+    },
+    {
+      "id": "EVT-0019",
+      "timestamp": "2026-01-05T20:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-100: Sampling"
+    },
+    {
+      "id": "EVT-0020",
+      "timestamp": "2026-01-05T20:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-100: Temperature shift"
+    },
+    {
+      "id": "EVT-0021",
+      "timestamp": "2026-01-05T20:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-100: Sampling"
+    },
+    {
+      "id": "EVT-0022",
+      "timestamp": "2026-01-06T00:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-101: Media fill"
+    },
+    {
+      "id": "EVT-0023",
+      "timestamp": "2026-01-06T00:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-101: Feed start"
+    },
+    {
+      "id": "EVT-0024",
+      "timestamp": "2026-01-06T00:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-101: Harvest"
+    },
+    {
+      "id": "EVT-0025",
+      "timestamp": "2026-01-06T04:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-101: Media fill"
+    },
+    {
+      "id": "EVT-0026",
+      "timestamp": "2026-01-06T04:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-101: Sampling"
+    },
+    {
+      "id": "EVT-0027",
+      "timestamp": "2026-01-06T04:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-101: Media fill"
+    },
+    {
+      "id": "EVT-0028",
+      "timestamp": "2026-01-06T05:21:00.000Z",
+      "equipment": "Pump-2",
+      "type": "sensor_pause",
+      "description": "Data stream paused for 6 min"
+    },
+    {
+      "id": "EVT-0029",
+      "timestamp": "2026-01-06T05:24:00.000Z",
+      "equipment": "Pump-2",
+      "type": "alarm",
+      "description": "Flow rate low 1.2 L/min (setpoint 2.0)"
+    },
+    {
+      "id": "EVT-0030",
+      "timestamp": "2026-01-06T06:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "work_order",
+      "description": "WO-1014 opened: inspect Pump-2"
+    },
+    {
+      "id": "EVT-0031",
+      "timestamp": "2026-01-06T08:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-101: Inoculation"
+    },
+    {
+      "id": "EVT-0032",
+      "timestamp": "2026-01-06T08:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-101: Media fill"
+    },
+    {
+      "id": "EVT-0033",
+      "timestamp": "2026-01-06T08:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-101: Inoculation"
+    },
+    {
+      "id": "EVT-0034",
+      "timestamp": "2026-01-06T12:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-101: Temperature shift"
+    },
+    {
+      "id": "EVT-0035",
+      "timestamp": "2026-01-06T12:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-101: Sampling"
+    },
+    {
+      "id": "EVT-0036",
+      "timestamp": "2026-01-06T12:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-101: Media fill"
+    },
+    {
+      "id": "EVT-0037",
+      "timestamp": "2026-01-06T16:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-101: Inoculation"
+    },
+    {
+      "id": "EVT-0038",
+      "timestamp": "2026-01-06T16:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-101: Harvest"
+    },
+    {
+      "id": "EVT-0039",
+      "timestamp": "2026-01-06T16:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-101: Feed start"
+    },
+    {
+      "id": "EVT-0040",
+      "timestamp": "2026-01-06T20:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-101: Temperature shift"
+    },
+    {
+      "id": "EVT-0041",
+      "timestamp": "2026-01-06T20:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-101: Inoculation"
+    },
+    {
+      "id": "EVT-0042",
+      "timestamp": "2026-01-06T20:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-101: Feed start"
+    },
+    {
+      "id": "EVT-0043",
+      "timestamp": "2026-01-06T21:20:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "sensor_pause",
+      "description": "Data stream paused for 7 min"
+    },
+    {
+      "id": "EVT-0044",
+      "timestamp": "2026-01-06T21:23:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "alarm",
+      "description": "High temperature 38.4 C (limit 37.5 C)"
+    },
+    {
+      "id": "EVT-0045",
+      "timestamp": "2026-01-06T21:43:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "sensor_pause",
+      "description": "Data stream paused for 11 min"
+    },
+    {
+      "id": "EVT-0046",
+      "timestamp": "2026-01-06T21:46:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "alarm",
+      "description": "High temperature 38.4 C (limit 37.5 C)"
+    },
+    {
+      "id": "EVT-0047",
+      "timestamp": "2026-01-06T22:02:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "work_order",
+      "description": "WO-1008 opened: inspect Bioreactor-1"
+    },
+    {
+      "id": "EVT-0048",
+      "timestamp": "2026-01-07T00:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-102: Media fill"
+    },
+    {
+      "id": "EVT-0049",
+      "timestamp": "2026-01-07T00:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-102: Media fill"
+    },
+    {
+      "id": "EVT-0050",
+      "timestamp": "2026-01-07T00:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-102: Sampling"
+    },
+    {
+      "id": "EVT-0051",
+      "timestamp": "2026-01-07T04:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-102: Sampling"
+    },
+    {
+      "id": "EVT-0052",
+      "timestamp": "2026-01-07T04:05:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "sensor_pause",
+      "description": "Data stream paused for 5 min"
+    },
+    {
+      "id": "EVT-0053",
+      "timestamp": "2026-01-07T04:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-102: Inoculation"
+    },
+    {
+      "id": "EVT-0054",
+      "timestamp": "2026-01-07T04:13:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "alarm",
+      "description": "High temperature 38.4 C (limit 37.5 C)"
+    },
+    {
+      "id": "EVT-0055",
+      "timestamp": "2026-01-07T04:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-102: Sampling"
+    },
+    {
+      "id": "EVT-0056",
+      "timestamp": "2026-01-07T04:40:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "work_order",
+      "description": "WO-1003 opened: inspect Bioreactor-1"
+    },
+    {
+      "id": "EVT-0057",
+      "timestamp": "2026-01-07T05:12:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "sensor_pause",
+      "description": "Data stream paused for 18 min"
+    },
+    {
+      "id": "EVT-0058",
+      "timestamp": "2026-01-07T05:17:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "alarm",
+      "description": "High temperature 38.4 C (limit 37.5 C)"
+    },
+    {
+      "id": "EVT-0059",
+      "timestamp": "2026-01-07T05:44:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "work_order",
+      "description": "WO-1002 opened: inspect Bioreactor-1"
+    },
+    {
+      "id": "EVT-0060",
+      "timestamp": "2026-01-07T06:40:00.000Z",
+      "equipment": "Pump-2",
+      "type": "sensor_pause",
+      "description": "Data stream paused for 21 min"
+    },
+    {
+      "id": "EVT-0061",
+      "timestamp": "2026-01-07T06:44:00.000Z",
+      "equipment": "Pump-2",
+      "type": "alarm",
+      "description": "Motor overcurrent"
+    },
+    {
+      "id": "EVT-0062",
+      "timestamp": "2026-01-07T07:03:00.000Z",
+      "equipment": "Pump-2",
+      "type": "work_order",
+      "description": "WO-1007 opened: inspect Pump-2"
+    },
+    {
+      "id": "EVT-0063",
+      "timestamp": "2026-01-07T08:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-102: Inoculation"
+    },
+    {
+      "id": "EVT-0064",
+      "timestamp": "2026-01-07T08:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-102: Inoculation"
+    },
+    {
+      "id": "EVT-0065",
+      "timestamp": "2026-01-07T08:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-102: Temperature shift"
+    },
+    {
+      "id": "EVT-0066",
+      "timestamp": "2026-01-07T10:16:00.000Z",
+      "equipment": "Pump-2",
+      "type": "sensor_pause",
+      "description": "Data stream paused for 13 min"
+    },
+    {
+      "id": "EVT-0067",
+      "timestamp": "2026-01-07T10:27:00.000Z",
+      "equipment": "Pump-2",
+      "type": "alarm",
+      "description": "Discharge pressure high"
+    },
+    {
+      "id": "EVT-0068",
+      "timestamp": "2026-01-07T11:13:00.000Z",
+      "equipment": "Pump-2",
+      "type": "work_order",
+      "description": "WO-1006 opened: inspect Pump-2"
+    },
+    {
+      "id": "EVT-0069",
+      "timestamp": "2026-01-07T12:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-102: Harvest"
+    },
+    {
+      "id": "EVT-0070",
+      "timestamp": "2026-01-07T12:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-102: Sampling"
+    },
+    {
+      "id": "EVT-0071",
+      "timestamp": "2026-01-07T12:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-102: Inoculation"
+    },
+    {
+      "id": "EVT-0072",
+      "timestamp": "2026-01-07T16:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-102: Inoculation"
+    },
+    {
+      "id": "EVT-0073",
+      "timestamp": "2026-01-07T16:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-102: Inoculation"
+    },
+    {
+      "id": "EVT-0074",
+      "timestamp": "2026-01-07T16:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-102: Media fill"
+    },
+    {
+      "id": "EVT-0075",
+      "timestamp": "2026-01-07T16:40:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "sensor_pause",
+      "description": "Data stream paused for 15 min"
+    },
+    {
+      "id": "EVT-0076",
+      "timestamp": "2026-01-07T16:52:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "alarm",
+      "description": "Low pH 6.6 (limit 6.8)"
+    },
+    {
+      "id": "EVT-0077",
+      "timestamp": "2026-01-07T20:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-102: Sampling"
+    },
+    {
+      "id": "EVT-0078",
+      "timestamp": "2026-01-07T20:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-102: Temperature shift"
+    },
+    {
+      "id": "EVT-0079",
+      "timestamp": "2026-01-07T20:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-102: Temperature shift"
+    },
+    {
+      "id": "EVT-0080",
+      "timestamp": "2026-01-07T21:26:00.000Z",
+      "equipment": "Pump-2",
+      "type": "sensor_pause",
+      "description": "Data stream paused for 18 min"
+    },
+    {
+      "id": "EVT-0081",
+      "timestamp": "2026-01-07T21:32:00.000Z",
+      "equipment": "Pump-2",
+      "type": "alarm",
+      "description": "Motor overcurrent"
+    },
+    {
+      "id": "EVT-0082",
+      "timestamp": "2026-01-08T00:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-103: Harvest"
+    },
+    {
+      "id": "EVT-0083",
+      "timestamp": "2026-01-08T00:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-103: Media fill"
+    },
+    {
+      "id": "EVT-0084",
+      "timestamp": "2026-01-08T00:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-103: Harvest"
+    },
+    {
+      "id": "EVT-0085",
+      "timestamp": "2026-01-08T04:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-103: Feed start"
+    },
+    {
+      "id": "EVT-0086",
+      "timestamp": "2026-01-08T04:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-103: Harvest"
+    },
+    {
+      "id": "EVT-0087",
+      "timestamp": "2026-01-08T04:12:00.000Z",
+      "equipment": "Pump-2",
+      "type": "sensor_pause",
+      "description": "Data stream paused for 13 min"
+    },
+    {
+      "id": "EVT-0088",
+      "timestamp": "2026-01-08T04:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-103: Media fill"
+    },
+    {
+      "id": "EVT-0089",
+      "timestamp": "2026-01-08T04:18:00.000Z",
+      "equipment": "Pump-2",
+      "type": "alarm",
+      "description": "Flow rate low 1.2 L/min (setpoint 2.0)"
+    },
+    {
+      "id": "EVT-0090",
+      "timestamp": "2026-01-08T04:52:00.000Z",
+      "equipment": "Pump-2",
+      "type": "work_order",
+      "description": "WO-1010 opened: inspect Pump-2"
+    },
+    {
+      "id": "EVT-0091",
+      "timestamp": "2026-01-08T08:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-103: Media fill"
+    },
+    {
+      "id": "EVT-0092",
+      "timestamp": "2026-01-08T08:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-103: Media fill"
+    },
+    {
+      "id": "EVT-0093",
+      "timestamp": "2026-01-08T08:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-103: Feed start"
+    },
+    {
+      "id": "EVT-0094",
+      "timestamp": "2026-01-08T09:12:00.000Z",
+      "equipment": "Pump-2",
+      "type": "sensor_pause",
+      "description": "Data stream paused for 8 min"
+    },
+    {
+      "id": "EVT-0095",
+      "timestamp": "2026-01-08T09:15:00.000Z",
+      "equipment": "Pump-2",
+      "type": "alarm",
+      "description": "Discharge pressure high"
+    },
+    {
+      "id": "EVT-0096",
+      "timestamp": "2026-01-08T10:12:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "sensor_pause",
+      "description": "Data stream paused for 17 min"
+    },
+    {
+      "id": "EVT-0097",
+      "timestamp": "2026-01-08T10:20:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "alarm",
+      "description": "Low pH 6.6 (limit 6.8)"
+    },
+    {
+      "id": "EVT-0098",
+      "timestamp": "2026-01-08T10:45:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "work_order",
+      "description": "WO-1001 opened: inspect Bioreactor-1"
+    },
+    {
+      "id": "EVT-0099",
+      "timestamp": "2026-01-08T12:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-103: Feed start"
+    },
+    {
+      "id": "EVT-0100",
+      "timestamp": "2026-01-08T12:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-103: Sampling"
+    },
+    {
+      "id": "EVT-0101",
+      "timestamp": "2026-01-08T12:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-103: Harvest"
+    },
+    {
+      "id": "EVT-0102",
+      "timestamp": "2026-01-08T16:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-103: Media fill"
+    },
+    {
+      "id": "EVT-0103",
+      "timestamp": "2026-01-08T16:04:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "sensor_pause",
+      "description": "Data stream paused for 15 min"
+    },
+    {
+      "id": "EVT-0104",
+      "timestamp": "2026-01-08T16:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-103: Temperature shift"
+    },
+    {
+      "id": "EVT-0105",
+      "timestamp": "2026-01-08T16:13:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "alarm",
+      "description": "Low pH 6.6 (limit 6.8)"
+    },
+    {
+      "id": "EVT-0106",
+      "timestamp": "2026-01-08T16:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-103: Harvest"
+    },
+    {
+      "id": "EVT-0107",
+      "timestamp": "2026-01-08T16:24:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "work_order",
+      "description": "WO-1011 opened: inspect Bioreactor-1"
+    },
+    {
+      "id": "EVT-0108",
+      "timestamp": "2026-01-08T17:05:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "sensor_pause",
+      "description": "Data stream paused for 9 min"
+    },
+    {
+      "id": "EVT-0109",
+      "timestamp": "2026-01-08T17:17:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "alarm",
+      "description": "Sensor drift detected"
+    },
+    {
+      "id": "EVT-0110",
+      "timestamp": "2026-01-08T17:45:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "work_order",
+      "description": "WO-1016 opened: inspect Sensor-DO-3"
+    },
+    {
+      "id": "EVT-0111",
+      "timestamp": "2026-01-08T19:15:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "sensor_pause",
+      "description": "Data stream paused for 18 min"
+    },
+    {
+      "id": "EVT-0112",
+      "timestamp": "2026-01-08T19:23:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "alarm",
+      "description": "DO signal out of range"
+    },
+    {
+      "id": "EVT-0113",
+      "timestamp": "2026-01-08T20:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-103: Inoculation"
+    },
+    {
+      "id": "EVT-0114",
+      "timestamp": "2026-01-08T20:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-103: Temperature shift"
+    },
+    {
+      "id": "EVT-0115",
+      "timestamp": "2026-01-08T20:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-103: Inoculation"
+    },
+    {
+      "id": "EVT-0116",
+      "timestamp": "2026-01-08T21:07:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "sensor_pause",
+      "description": "Data stream paused for 24 min"
+    },
+    {
+      "id": "EVT-0117",
+      "timestamp": "2026-01-08T21:10:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "alarm",
+      "description": "DO signal out of range"
+    },
+    {
+      "id": "EVT-0118",
+      "timestamp": "2026-01-08T21:38:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "work_order",
+      "description": "WO-1015 opened: inspect Sensor-DO-3"
+    },
+    {
+      "id": "EVT-0119",
+      "timestamp": "2026-01-09T00:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-104: Sampling"
+    },
+    {
+      "id": "EVT-0120",
+      "timestamp": "2026-01-09T00:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-104: Temperature shift"
+    },
+    {
+      "id": "EVT-0121",
+      "timestamp": "2026-01-09T00:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-104: Media fill"
+    },
+    {
+      "id": "EVT-0122",
+      "timestamp": "2026-01-09T04:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-104: Harvest"
+    },
+    {
+      "id": "EVT-0123",
+      "timestamp": "2026-01-09T04:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-104: Sampling"
+    },
+    {
+      "id": "EVT-0124",
+      "timestamp": "2026-01-09T04:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-104: Harvest"
+    },
+    {
+      "id": "EVT-0125",
+      "timestamp": "2026-01-09T08:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-104: Feed start"
+    },
+    {
+      "id": "EVT-0126",
+      "timestamp": "2026-01-09T08:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-104: Sampling"
+    },
+    {
+      "id": "EVT-0127",
+      "timestamp": "2026-01-09T08:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-104: Feed start"
+    },
+    {
+      "id": "EVT-0128",
+      "timestamp": "2026-01-09T12:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-104: Sampling"
+    },
+    {
+      "id": "EVT-0129",
+      "timestamp": "2026-01-09T12:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-104: Inoculation"
+    },
+    {
+      "id": "EVT-0130",
+      "timestamp": "2026-01-09T12:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-104: Temperature shift"
+    },
+    {
+      "id": "EVT-0131",
+      "timestamp": "2026-01-09T16:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-104: Inoculation"
+    },
+    {
+      "id": "EVT-0132",
+      "timestamp": "2026-01-09T16:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-104: Feed start"
+    },
+    {
+      "id": "EVT-0133",
+      "timestamp": "2026-01-09T16:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-104: Harvest"
+    },
+    {
+      "id": "EVT-0134",
+      "timestamp": "2026-01-09T20:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-104: Temperature shift"
+    },
+    {
+      "id": "EVT-0135",
+      "timestamp": "2026-01-09T20:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-104: Harvest"
+    },
+    {
+      "id": "EVT-0136",
+      "timestamp": "2026-01-09T20:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-104: Harvest"
+    },
+    {
+      "id": "EVT-0137",
+      "timestamp": "2026-01-10T00:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-105: Feed start"
+    },
+    {
+      "id": "EVT-0138",
+      "timestamp": "2026-01-10T00:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-105: Sampling"
+    },
+    {
+      "id": "EVT-0139",
+      "timestamp": "2026-01-10T00:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-105: Inoculation"
+    },
+    {
+      "id": "EVT-0140",
+      "timestamp": "2026-01-10T00:34:00.000Z",
+      "equipment": "Pump-2",
+      "type": "sensor_pause",
+      "description": "Data stream paused for 24 min"
+    },
+    {
+      "id": "EVT-0141",
+      "timestamp": "2026-01-10T00:45:00.000Z",
+      "equipment": "Pump-2",
+      "type": "alarm",
+      "description": "Motor overcurrent"
+    },
+    {
+      "id": "EVT-0142",
+      "timestamp": "2026-01-10T03:26:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "sensor_pause",
+      "description": "Data stream paused for 6 min"
+    },
+    {
+      "id": "EVT-0143",
+      "timestamp": "2026-01-10T03:29:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "alarm",
+      "description": "Dissolved oxygen low 18% (limit 30%)"
+    },
+    {
+      "id": "EVT-0144",
+      "timestamp": "2026-01-10T04:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-105: Media fill"
+    },
+    {
+      "id": "EVT-0145",
+      "timestamp": "2026-01-10T04:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-105: Temperature shift"
+    },
+    {
+      "id": "EVT-0146",
+      "timestamp": "2026-01-10T04:13:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "work_order",
+      "description": "WO-1005 opened: inspect Sensor-DO-3"
+    },
+    {
+      "id": "EVT-0147",
+      "timestamp": "2026-01-10T04:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-105: Inoculation"
+    },
+    {
+      "id": "EVT-0148",
+      "timestamp": "2026-01-10T04:31:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "sensor_pause",
+      "description": "Data stream paused for 18 min"
+    },
+    {
+      "id": "EVT-0149",
+      "timestamp": "2026-01-10T04:41:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "alarm",
+      "description": "DO signal out of range"
+    },
+    {
+      "id": "EVT-0150",
+      "timestamp": "2026-01-10T07:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "sensor_pause",
+      "description": "Data stream paused for 11 min"
+    },
+    {
+      "id": "EVT-0151",
+      "timestamp": "2026-01-10T07:23:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "alarm",
+      "description": "Sensor drift detected"
+    },
+    {
+      "id": "EVT-0152",
+      "timestamp": "2026-01-10T08:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-105: Temperature shift"
+    },
+    {
+      "id": "EVT-0153",
+      "timestamp": "2026-01-10T08:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-105: Harvest"
+    },
+    {
+      "id": "EVT-0154",
+      "timestamp": "2026-01-10T08:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-105: Media fill"
+    },
+    {
+      "id": "EVT-0155",
+      "timestamp": "2026-01-10T11:43:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "sensor_pause",
+      "description": "Data stream paused for 20 min"
+    },
+    {
+      "id": "EVT-0156",
+      "timestamp": "2026-01-10T11:47:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "alarm",
+      "description": "DO signal out of range"
+    },
+    {
+      "id": "EVT-0157",
+      "timestamp": "2026-01-10T12:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-105: Feed start"
+    },
+    {
+      "id": "EVT-0158",
+      "timestamp": "2026-01-10T12:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-105: Temperature shift"
+    },
+    {
+      "id": "EVT-0159",
+      "timestamp": "2026-01-10T12:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-105: Media fill"
+    },
+    {
+      "id": "EVT-0160",
+      "timestamp": "2026-01-10T12:20:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "work_order",
+      "description": "WO-1009 opened: inspect Sensor-DO-3"
+    },
+    {
+      "id": "EVT-0161",
+      "timestamp": "2026-01-10T16:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-105: Harvest"
+    },
+    {
+      "id": "EVT-0162",
+      "timestamp": "2026-01-10T16:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-105: Inoculation"
+    },
+    {
+      "id": "EVT-0163",
+      "timestamp": "2026-01-10T16:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-105: Temperature shift"
+    },
+    {
+      "id": "EVT-0164",
+      "timestamp": "2026-01-10T19:30:00.000Z",
+      "equipment": "Pump-2",
+      "type": "sensor_pause",
+      "description": "Data stream paused for 22 min"
+    },
+    {
+      "id": "EVT-0165",
+      "timestamp": "2026-01-10T19:37:00.000Z",
+      "equipment": "Pump-2",
+      "type": "alarm",
+      "description": "Flow rate low 1.2 L/min (setpoint 2.0)"
+    },
+    {
+      "id": "EVT-0166",
+      "timestamp": "2026-01-10T20:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-105: Temperature shift"
+    },
+    {
+      "id": "EVT-0167",
+      "timestamp": "2026-01-10T20:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-105: Inoculation"
+    },
+    {
+      "id": "EVT-0168",
+      "timestamp": "2026-01-10T20:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-105: Feed start"
+    },
+    {
+      "id": "EVT-0169",
+      "timestamp": "2026-01-10T20:22:00.000Z",
+      "equipment": "Pump-2",
+      "type": "work_order",
+      "description": "WO-1004 opened: inspect Pump-2"
+    },
+    {
+      "id": "EVT-0170",
+      "timestamp": "2026-01-11T00:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-106: Media fill"
+    },
+    {
+      "id": "EVT-0171",
+      "timestamp": "2026-01-11T00:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-106: Sampling"
+    },
+    {
+      "id": "EVT-0172",
+      "timestamp": "2026-01-11T00:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-106: Feed start"
+    },
+    {
+      "id": "EVT-0173",
+      "timestamp": "2026-01-11T04:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-106: Inoculation"
+    },
+    {
+      "id": "EVT-0174",
+      "timestamp": "2026-01-11T04:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-106: Sampling"
+    },
+    {
+      "id": "EVT-0175",
+      "timestamp": "2026-01-11T04:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-106: Harvest"
+    },
+    {
+      "id": "EVT-0176",
+      "timestamp": "2026-01-11T07:29:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "sensor_pause",
+      "description": "Data stream paused for 21 min"
+    },
+    {
+      "id": "EVT-0177",
+      "timestamp": "2026-01-11T07:36:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "alarm",
+      "description": "Dissolved oxygen low 18% (limit 30%)"
+    },
+    {
+      "id": "EVT-0178",
+      "timestamp": "2026-01-11T08:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-106: Inoculation"
+    },
+    {
+      "id": "EVT-0179",
+      "timestamp": "2026-01-11T08:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-106: Temperature shift"
+    },
+    {
+      "id": "EVT-0180",
+      "timestamp": "2026-01-11T08:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-106: Feed start"
+    },
+    {
+      "id": "EVT-0181",
+      "timestamp": "2026-01-11T11:16:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "sensor_pause",
+      "description": "Data stream paused for 18 min"
+    },
+    {
+      "id": "EVT-0182",
+      "timestamp": "2026-01-11T11:24:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "alarm",
+      "description": "Sensor drift detected"
+    },
+    {
+      "id": "EVT-0183",
+      "timestamp": "2026-01-11T11:55:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "work_order",
+      "description": "WO-1017 opened: inspect Sensor-DO-3"
+    },
+    {
+      "id": "EVT-0184",
+      "timestamp": "2026-01-11T12:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-106: Media fill"
+    },
+    {
+      "id": "EVT-0185",
+      "timestamp": "2026-01-11T12:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-106: Harvest"
+    },
+    {
+      "id": "EVT-0186",
+      "timestamp": "2026-01-11T12:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-106: Feed start"
+    },
+    {
+      "id": "EVT-0187",
+      "timestamp": "2026-01-11T12:34:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "sensor_pause",
+      "description": "Data stream paused for 6 min"
+    },
+    {
+      "id": "EVT-0188",
+      "timestamp": "2026-01-11T12:45:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "alarm",
+      "description": "Low pH 6.6 (limit 6.8)"
+    },
+    {
+      "id": "EVT-0189",
+      "timestamp": "2026-01-11T12:57:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "work_order",
+      "description": "WO-1012 opened: inspect Bioreactor-1"
+    },
+    {
+      "id": "EVT-0190",
+      "timestamp": "2026-01-11T16:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-106: Media fill"
+    },
+    {
+      "id": "EVT-0191",
+      "timestamp": "2026-01-11T16:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-106: Temperature shift"
+    },
+    {
+      "id": "EVT-0192",
+      "timestamp": "2026-01-11T16:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-106: Sampling"
+    },
+    {
+      "id": "EVT-0193",
+      "timestamp": "2026-01-11T20:00:00.000Z",
+      "equipment": "Bioreactor-1",
+      "type": "batch_step",
+      "description": "Batch B-106: Harvest"
+    },
+    {
+      "id": "EVT-0194",
+      "timestamp": "2026-01-11T20:06:00.000Z",
+      "equipment": "Pump-2",
+      "type": "sensor_pause",
+      "description": "Data stream paused for 8 min"
+    },
+    {
+      "id": "EVT-0195",
+      "timestamp": "2026-01-11T20:07:00.000Z",
+      "equipment": "Pump-2",
+      "type": "batch_step",
+      "description": "Batch B-106: Harvest"
+    },
+    {
+      "id": "EVT-0196",
+      "timestamp": "2026-01-11T20:10:00.000Z",
+      "equipment": "Pump-2",
+      "type": "alarm",
+      "description": "Motor overcurrent"
+    },
+    {
+      "id": "EVT-0197",
+      "timestamp": "2026-01-11T20:14:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "batch_step",
+      "description": "Batch B-106: Inoculation"
+    },
+    {
+      "id": "EVT-0198",
+      "timestamp": "2026-01-11T20:34:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "sensor_pause",
+      "description": "Data stream paused for 21 min"
+    },
+    {
+      "id": "EVT-0199",
+      "timestamp": "2026-01-11T20:41:00.000Z",
+      "equipment": "Pump-2",
+      "type": "work_order",
+      "description": "WO-1000 opened: inspect Pump-2"
+    },
+    {
+      "id": "EVT-0200",
+      "timestamp": "2026-01-11T20:43:00.000Z",
+      "equipment": "Sensor-DO-3",
+      "type": "alarm",
+      "description": "Sensor drift detected"
+    }
+  ]
+}
