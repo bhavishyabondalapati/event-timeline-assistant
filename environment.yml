@@ -1,0 +1,7 @@
+# Conda environment: provides Node.js and Terraform. npm packages live in node_modules/ (see package.json).
+name: event-timeline-assistant
+channels:
+  - conda-forge
+dependencies:
+  - nodejs=22
+  - terraform

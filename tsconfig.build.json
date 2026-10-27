@@ -1,0 +1,10 @@
+{
+  // Used by `npm run build` (and the Dockerfile): compiles only src/ into plain JavaScript in dist/.
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "include": ["src"]
+}

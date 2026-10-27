@@ -1,0 +1,18 @@
+# Secrets: never commit real keys
+.env
+
+# Dependencies and build output
+node_modules/
+dist/
+venv/
+__pycache__/
+
+# The SQLite file is rebuilt from data/events.json by `npm run seed`
+*.db
+
+# Terraform local state and provider downloads
+terraform/.terraform/
+terraform/*.tfstate*
+
+# macOS
+.DS_Store

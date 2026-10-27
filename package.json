@@ -1,0 +1,30 @@
+{
+  "name": "event-timeline-assistant",
+  "version": "1.0.0",
+  "description": "Learning project: a REST API + tiny UI to explore a timeline of SIMULATED equipment events.",
+  "private": true,
+  "scripts": {
+    "generate": "tsx scripts/generate-data.ts",
+    "seed": "tsx src/seed.ts",
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node dist/server.js",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.20.5",
+    "@types/supertest": "^7.2.1",
+    "supertest": "^7.3.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  }
+}
