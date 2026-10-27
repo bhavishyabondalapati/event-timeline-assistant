@@ -1,0 +1,87 @@
+<!doctype html>
+<!-- Tiny UI: plain HTML + JavaScript, no build step. It calls the same REST API you can call with curl. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Event Timeline Assistant</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 860px; margin: 24px auto; padding: 0 16px; }
+    .banner { background: #fff3cd; border: 1px solid #e0c36b; padding: 8px 12px; border-radius: 6px; }
+    form { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; align-items: end; }
+    label { display: flex; flex-direction: column; font-size: 13px; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    td, th { border-bottom: 1px solid #ddd; padding: 6px; text-align: left; }
+    .alarm { color: #b00020; font-weight: 600; }
+    .bad { color: #b00020; }
+  </style>
+</head>
+<body>
+  <h1>Event Timeline Assistant</h1>
+  <p class="banner">⚠️ All data here is <b>SIMULATED</b> for a learning project (week of 2026-01-05).</p>
+
+  <form id="form">
+    <label>Equipment
+      <select id="equipment"><option>Bioreactor-1</option><option selected>Pump-2</option><option>Sensor-DO-3</option></select>
+    </label>
+    <label>Around (UTC) <input id="around" type="datetime-local" value="2026-01-07T10:30" /></label>
+    <label>± minutes <input id="minutes" type="number" value="60" min="1" max="1440" /></label>
+    <button>Show timeline</button>
+  </form>
+  <form id="ask-form">
+    <label style="flex:1">Ask about this window (optional AI summary)
+      <input id="question" value="What happened and what was done about it?" />
+    </label>
+    <button>Ask</button>
+  </form>
+
+  <div id="summary"></div>
+  <table><thead><tr><th>Id</th><th>Time (UTC)</th><th>Type</th><th>Description</th></tr></thead>
+    <tbody id="rows"></tbody></table>
+
+  <script>
+    const $ = (id) => document.getElementById(id);
+    // datetime-local has no timezone, so we add ":00Z" to mean UTC.
+    const params = () => ({ equipment: $("equipment").value, around: $("around").value + ":00Z", minutes: $("minutes").value });
+
+    function showEvents(events) {
+      $("rows").innerHTML = "";
+      for (const e of events) {
+        const row = $("rows").insertRow();
+        [e.id, e.timestamp.slice(0, 16).replace("T", " "), e.type, e.description].forEach((text) => {
+          row.insertCell().textContent = text; // textContent (not innerHTML) so data is never run as HTML
+        });
+        if (e.type === "alarm") row.className = "alarm";
+      }
+      if (!events.length) $("rows").innerHTML = "<tr><td colspan=4>No events in this window.</td></tr>";
+    }
+
+    $("form").onsubmit = async (event) => {
+      event.preventDefault();
+      $("summary").textContent = "";
+      const res = await fetch("/timeline?" + new URLSearchParams(params()));
+      const data = await res.json();
+      if (!res.ok) return ($("summary").textContent = "Error: " + data.error);
+      showEvents(data.events);
+    };
+
+    $("ask-form").onsubmit = async (event) => {
+      event.preventDefault();
+      $("summary").textContent = "Asking…";
+      const body = { ...params(), minutes: Number($("minutes").value), question: $("question").value };
+      const res = await fetch("/ask", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+      const data = await res.json();
+      showEvents(data.events ?? []);
+      if (!res.ok) return ($("summary").textContent = "Error: " + data.error);
+      if (!data.summary) return ($("summary").textContent = data.note);
+      const check = data.citations.invalid.length
+        ? `<p class="bad">⚠️ Cites ids NOT in this timeline: ${data.citations.invalid.join(", ")}</p>`
+        : data.citations.verified ? "<p>✅ Every cited id was checked against the timeline.</p>" : "<p class='bad'>⚠️ No event ids cited.</p>";
+      $("summary").innerHTML = "<h3>AI summary (of SIMULATED data)</h3><p></p>" + check;
+      $("summary").querySelector("p").textContent = data.summary;
+    };
+
+    $("form").requestSubmit(); // load the default timeline on page open
+  </script>
+</body>
+</html>
