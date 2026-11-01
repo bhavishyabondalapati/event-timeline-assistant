@@ -25,6 +25,12 @@ variable "app_name" {
   default = "event-timeline-assistant"
 }
 
+# Who may reach the app, e.g. "203.0.113.7/32" for just your IP. No default on purpose:
+# opening it to 0.0.0.0/0 would let anyone call /ask and spend the Gemini quota.
+variable "allowed_cidr" {
+  type = string
+}
+
 # ECR: a private Docker registry. You `docker push` the image here and ECS pulls it.
 resource "aws_ecr_repository" "app" {
   name = var.app_name
@@ -122,7 +128,9 @@ data "aws_subnets" "default" {
   }
 }
 
-# Security group = a firewall. Allow HTTP to port 3000 in, and anything out (to call Gemini).
+# Security group = a firewall. Allow port 3000 in from allowed_cidr only, and anything out (to call Gemini).
+# This is plain HTTP. Before a public launch, put an Application Load Balancer in front with an
+# ACM certificate and an HTTPS listener, and allow port 3000 only from the load balancer.
 resource "aws_security_group" "app" {
   name   = "${var.app_name}-sg"
   vpc_id = data.aws_vpc.default.id
@@ -131,7 +139,7 @@ resource "aws_security_group" "app" {
     from_port   = 3000
     to_port     = 3000
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = [var.allowed_cidr]
   }
 
   egress {

@@ -17,6 +17,8 @@ The data: 200 simulated events over one week (2026-01-05 to 2026-01-11) for `Bio
 | **Express 5** | The most common, minimal Node web framework. v5 catches errors from `async` handlers. |
 | **SQLite + better-sqlite3** | A real SQL database stored in one file, no server to install. Simple synchronous API. |
 | **dotenv** | Loads `GEMINI_API_KEY` etc. from `.env` so secrets stay out of code. |
+| **helmet** | Sets standard security headers (CSP, nosniff, frame blocking) and removes `X-Powered-By` in one line. |
+| **express-rate-limit** | Caps `POST /ask` at 10 requests per minute per IP, so nobody can run up the Gemini bill. |
 | **Gemini REST API** (via `fetch`) | Optional AI summary. Plain `fetch` instead of an SDK so you can see the actual HTTP call. |
 | **Vitest + supertest** | Fast TypeScript test runner; supertest sends HTTP requests to the app without opening a port. |
 | **tsx** | Runs `.ts` files directly during development (no compile step). |
@@ -49,6 +51,7 @@ event-timeline-assistant/
 ├── Dockerfile               Two-stage build: compile + seed, then a small runtime image
 ├── .dockerignore            Keeps .env, node_modules etc. out of the image
 ├── environment.yml          Conda env with Node.js 22 and Terraform
+├── LICENSE                  MIT license
 ├── package.json             npm dependencies and scripts (Node's version of requirements.txt)
 ├── package-lock.json        Exact versions of every installed package
 ├── tsconfig.json            TypeScript settings (strict) for editor, type-check, tests
@@ -163,3 +166,7 @@ cd terraform && terraform init -backend=false && terraform validate
 
 ---
 Built as a learning project with AI-assisted tools. All data is simulated.
+
+## License
+
+Code is released under the MIT License; see [LICENSE](LICENSE).

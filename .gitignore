@@ -16,3 +16,23 @@ terraform/*.tfstate*
 
 # macOS
 .DS_Store
+
+# Security baseline: secrets, environments, logs, databases, raw data, model weights, OS files
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+credentials*.json
+secrets/
+.venv/
+*.log
+logs/
+*.sqlite3
+data/raw/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.h5

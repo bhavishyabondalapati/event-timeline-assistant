@@ -2,6 +2,8 @@
 // createApp() does not start a server, so tests can call it with an in-memory database.
 import path from "node:path";
 import express, { type Response } from "express";
+import { rateLimit } from "express-rate-limit";
+import helmet from "helmet";
 import { checkCitations } from "./citations";
 import type { DB } from "./db";
 import type { Summarizer } from "./gemini";
@@ -12,6 +14,7 @@ const dataSource = "SIMULATED"; // included in every response so nobody mistakes
 
 export interface AppOptions {
   summarize?: Summarizer; // leave out (no API key) and /ask returns the timeline without a summary
+  askPerMinute?: number; // max POST /ask calls per client IP per minute (each may call the paid Gemini API)
 }
 
 // 400 Bad Request = "your input is wrong". The message says exactly what to fix.
@@ -21,7 +24,9 @@ function badRequest(res: Response, error: string): void {
 
 export function createApp(db: DB, options: AppOptions = {}) {
   const app = express();
-  app.use(express.json()); // parse JSON request bodies into req.body
+  // Security headers (no X-Powered-By, nosniff, frame blocking, CSP). The UI uses one inline <script>.
+  app.use(helmet({ contentSecurityPolicy: { directives: { "script-src": ["'self'", "'unsafe-inline'"] } } }));
+  app.use(express.json({ limit: "10kb" })); // parse JSON request bodies into req.body; requests are small
   app.use(express.static(path.join(__dirname, "..", "public"))); // serves the UI at "/"
 
   app.get("/health", (_req, res) => {
@@ -61,7 +66,9 @@ export function createApp(db: DB, options: AppOptions = {}) {
   });
 
   // async because it may wait on the Gemini API. Express 5 also catches errors from async handlers.
-  app.post("/ask", async (req, res) => {
+  // 429 Too Many Requests once a client goes over the limit, so one caller can't run up the Gemini bill.
+  const askLimit = rateLimit({ windowMs: 60_000, limit: options.askPerMinute ?? 10, standardHeaders: "draft-8", legacyHeaders: false });
+  app.post("/ask", askLimit, async (req, res) => {
     const input = parseAskBody(req.body);
     if (!input.ok) return badRequest(res, input.error);
     const { question, equipment, around, minutes } = input.value;

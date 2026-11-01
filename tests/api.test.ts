@@ -46,3 +46,20 @@ describe("happy paths", () => {
     expect(res.body.events).toHaveLength(3);
   });
 });
+
+describe("security", () => {
+  it("sends security headers and hides X-Powered-By", async () => {
+    const res = await request(app).get("/health");
+    expect(res.headers["x-content-type-options"]).toBe("nosniff");
+    expect(res.headers["content-security-policy"]).toContain("default-src 'self'");
+    expect(res.headers["x-powered-by"]).toBeUndefined();
+  });
+
+  it("rate limits POST /ask per client", async () => {
+    const limited = createApp(makeTestDb(), { askPerMinute: 2 });
+    const body = { question: "What happened?", equipment: "Pump-2", around: "2026-01-07T10:00:00Z" };
+    expect((await request(limited).post("/ask").send(body)).status).toBe(200);
+    expect((await request(limited).post("/ask").send(body)).status).toBe(200);
+    expect((await request(limited).post("/ask").send(body)).status).toBe(429);
+  });
+});
